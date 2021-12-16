@@ -4,11 +4,14 @@ import streamlit.components.v1 as components
 import codecs
 
 def app():
+    
+    st.write("""
+    # Transit Planner :tram:
+    (C) Alfonso Romero -Ironhack DAFT-OCT21
+    """)
+    
     portada = Image.open("images/930009.jpg")
     st.image(portada, use_column_width=True)
     
     st.write("""
-    # Transit Planner
-    ## Al cobete 🚀
-    Este es mi proyecto y bla bla
-    """)
+    ## Proposing new stations for Metro de Sevilla""")

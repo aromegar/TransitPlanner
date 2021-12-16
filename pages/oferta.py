@@ -8,7 +8,18 @@ import folium
 def app():
     
     st.write("""
-    ### Oferta actual de bicis / buses:
+    ### Oferta actual Metro de Sevilla:
+    """)
+    f0=codecs.open("Maps/metromap.html", 'r')
+    mapa0 = f0.read()
+    components.html(mapa0,height=550,scrolling=True)
+    
+    f0=codecs.open("Maps/bici-bus-heat.html", 'r')
+    mapa0 = f0.read()
+    components.html(mapa0,height=550,scrolling=True)
+    
+    st.write("""
+    ### Oferta actual de bicicletas   vs.   oferta de autobuses:
     """)
     f0=codecs.open("Maps/bici-bus-grupos.html", 'r')
     mapa0 = f0.read()
