@@ -6,6 +6,7 @@ import codecs
 def app():
     portada = Image.open("images/930009.jpg")
     st.image(portada, use_column_width=True)
+    
     st.write("""
     # Transit Planner
     ## Al cobete 🚀
