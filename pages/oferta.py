@@ -14,13 +14,19 @@ def app():
     mapa0 = f0.read()
     components.html(mapa0,height=550,scrolling=True)
     
-    f0=codecs.open("Maps/bici-bus-heat.html", 'r')
+    
+    st.write("""
+    ### Oferta actual de bicicletas :bicyclist:   vs.   oferta de autobuses :oncoming_bus:
+    """)
+    f0=codecs.open("Maps/bici-bus-cloro.html", 'r')
     mapa0 = f0.read()
     components.html(mapa0,height=550,scrolling=True)
     
     st.write("""
-    ### Oferta actual de bicicletas   vs.   oferta de autobuses:
+    ###
+    
+    ### Lo vemos en un heatmap:
     """)
-    f0=codecs.open("Maps/bici-bus-grupos.html", 'r')
+    f0=codecs.open("Maps/bici-bus-heat.html", 'r')
     mapa0 = f0.read()
     components.html(mapa0,height=550,scrolling=True)
